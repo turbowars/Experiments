@@ -1,0 +1,35 @@
+nav {
+    display:block;
+    font:14px arial;
+}
+
+nav li {
+    display:inline-block;
+    padding:10px 20px;
+}
+
+a[data-new-mail] {
+    position:relative;
+    text-decoration:none;
+}
+
+a[data-new-mail]:after {
+    content:attr(data-new-mail);
+    display:block;
+    
+    width:20px;
+    height:20px;
+    background:#f90;
+    text-align:center;
+    color:#fff;
+    
+    position:absolute;
+    right:-20px;
+    top:-20px;
+
+}
+
+a[data-new-mail="0"]:after {
+    display:none;
+}
+    
